@@ -9,7 +9,10 @@
   (when (version< emacs-version minver)
     (error "Emacs v%s or higher is required" minver)))
 
-(setq user-init-file (or load-file-name (buffer-file-name)))
+;; @see https://emacs.stackexchange.com/questions/4253/how-to-start-emacs-with-a-custom-user-emacs-directory
+;; My personal configuration can run unaffected if I change the
+;; .emacs.d symlink while emacs is running.
+(setq user-init-file (file-truename (or load-file-name buffer-file-name)))
 (setq user-emacs-directory (file-name-directory user-init-file))
 
 (defvar my-debug nil "Enable debug mode.")
