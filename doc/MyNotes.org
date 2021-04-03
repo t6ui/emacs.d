@@ -1,0 +1,7 @@
+* Org mode
+
+** 如何能配置出顺手的 Web 开发环境
+https://github.com/redguardtoo/emacs.d/issues/827
+
+** UniversalCtags/ExuberantCtags/Etags
+https://www.emacswiki.org/emacs/BuildTags
