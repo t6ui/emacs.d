@@ -1,3 +1,5 @@
+;; -*- coding: utf-8; lexical-binding: t; -*-
+
 ;; The following setting is different from the document so that you
 ;; can override the document path by setting your path in the variable
 ;; org-mode-user-lisp-path
@@ -6,13 +8,15 @@
     (add-to-list 'load-path org-mode-user-lisp-path)
   (add-to-list 'load-path (expand-file-name "~/Dropbox/org-mode/lisp")))
 
-(add-to-list 'auto-mode-alist '("\\.\\(org\\|org_archive\\|txt\\)$" . org-mode))
+(add-to-list 'auto-mode-alist '("\\.\\(org\\|org_archive\\)$" . org-mode))
 (require 'org)
 ;;
 ;; Standard key bindings
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-ca" 'org-agenda)
-(global-set-key "\C-cb" 'org-iswitchb)
+(global-unset-key "\C-cc")
+(global-set-key "\C-cc" 'org-capture)
+(global-set-key "\C-cb" 'org-switchb)
 
 ;; The following setting is different from the document so that you
 ;; can override the document org-agenda-files by setting your
@@ -185,6 +189,8 @@
 
 ;; Compact the block agenda view
 (setq org-agenda-compact-blocks t)
+
+(require 'org-habit)
 
 ;; Custom agenda command definitions
 (setq org-agenda-custom-commands
@@ -762,7 +768,7 @@ Skip project and sub-project tasks, habits, and loose non-project tasks."
           (subtree-end (save-excursion (org-end-of-subtree t))))
       (if (member (org-get-todo-state) org-todo-keywords-1)
           (if (member (org-get-todo-state) org-done-keywords)
-              (let* ((daynr (string-to-int (format-time-string "%d" (current-time))))
+              (let* ((daynr (string-to-number (format-time-string "%d" (current-time))))
                      (a-month-ago (* 60 60 24 (+ daynr 1)))
                      (last-month (format-time-string "%Y-%m-" (time-subtract (current-time) (seconds-to-time a-month-ago))))
                      (this-month (format-time-string "%Y-%m-" (current-time)))
@@ -806,7 +812,7 @@ Skip project and sub-project tasks, habits, and loose non-project tasks."
          (ruby . t)
          (gnuplot . t)
          (clojure . t)
-         (sh . t)
+         (shell . t)
          (ledger . t)
          (org . t)
          (plantuml . t)
@@ -1414,9 +1420,15 @@ so change the default 'F' binding in the agenda to allow both"
 (setq org-agenda-start-on-weekday 1)
 
 ;; Enable display of the time grid so we can see the marker for the current time
-(setq org-agenda-time-grid (quote ((daily today remove-match)
-                                   #("----------------" 0 16 (org-heading t))
-                                   (0900 1100 1300 1500 1700))))
+;; (setq org-agenda-time-grid (quote ((daily today remove-match)
+;;                                    #("----------------" 0 16 (org-heading t))
+;;                                    (0900 1100 1300 1500 1700))))
+
+(setq org-agenda-time-grid (quote 
+                             ((daily today remove-match)
+                              (0900 1100 1300 1500 1700)                                   
+                              "......" "----------------")))
+
 
 ;; Display tags farther right
 (setq org-agenda-tags-column -102)
@@ -1525,7 +1537,7 @@ Late deadlines first, then scheduled, then non-late deadlines"
     (add-to-list 'load-path org-mode-user-contrib-lisp-path)
   (add-to-list 'load-path (expand-file-name "~/Dropbox/org-mode/contrib/lisp")))
 
-(require 'org-checklist)
+;; (require 'org-checklist)
 
 (setq org-enforce-todo-dependencies t)
 
@@ -1739,19 +1751,19 @@ Late deadlines first, then scheduled, then non-late deadlines"
 (setq org-link-mailto-program (quote (compose-mail "%a" "%s")))
 
 (add-to-list 'load-path (expand-file-name "~/.emacs.d"))
-(require 'smex)
-(smex-initialize)
+;; (require 'smex)
+;; (smex-initialize)
 
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "C-x x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+;; (global-set-key (kbd "M-x") 'smex)
+;; (global-set-key (kbd "C-x x") 'smex)
+;; (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 
 ;; Bookmark handling
 ;;
 (global-set-key (kbd "<C-f6>") '(lambda () (interactive) (bookmark-set "SAVED")))
 (global-set-key (kbd "<f6>") '(lambda () (interactive) (bookmark-jump "SAVED")))
 
-(require 'org-mime)
+;; (require 'org-mime)
 
 (setq org-agenda-skip-additional-timestamps-same-entry t)
 
@@ -1867,4 +1879,21 @@ Late deadlines first, then scheduled, then non-late deadlines"
 
 (run-at-time "00:59" 3600 'org-save-all-org-buffers)
 
-;; (provide 'init-org-mode)
+
+;;; The custom function diary-list-day-of-month (set forth below) can be used to create a repeating org-mode task or to create a diary entry that will appear on the *Calendar* and/or in the *Org Agenda* buffer (if org-agenda-include-diary is t).
+
+;;; ORG-MODE:  * My Task
+;;;              SCHEDULED: <%%(diary-last-day-of-month date)>
+;;; DIARY:  %%(diary-last-day-of-month date) Last Day of the Month
+;;; See also:  (setq org-agenda-include-diary t)
+;;; (diary-last-day-of-month '(2 28 2017))
+(defun diary-last-day-of-month (date)
+"Return `t` if DATE is the last day of the month."
+  (let* ((day (calendar-extract-day date))
+         (month (calendar-extract-month date))
+         (year (calendar-extract-year date))
+         (last-day-of-month
+            (calendar-last-day-of-month month year)))
+    (= day last-day-of-month)))
+
+(provide 'init-org)
