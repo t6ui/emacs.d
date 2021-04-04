@@ -620,8 +620,6 @@ If N > 0, only occurrences in current N lines are renamed."
   "x2" 'split-window-vertically
   "x3" 'split-window-horizontally
   "xq" 'delete-window
-  "xa" 'split-window-vertically
-  "xd" 'split-window-horizontally
   "s0" 'delete-window
   "s1" 'delete-other-windows
   "s2" 'split-window-vertically
@@ -629,6 +627,14 @@ If N > 0, only occurrences in current N lines are renamed."
   "sq" 'delete-window
   "sa" 'split-window-vertically
   "sd" 'split-window-horizontally
+  "sf" '(lambda ()
+          (interactive)
+          (split-window-below)
+          (windmove-down))
+  "sv" '(lambda ()
+          (interactive)
+          (split-window-right)
+          (windmove-right))
   "oo" 'delete-other-windows
   ;; }}
   "xr" 'my-rotate-windows
