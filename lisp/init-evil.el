@@ -492,7 +492,7 @@ If INCLUSIVE is t, the text object is inclusive."
 
 ;; {{ use `,` as leader key
 (general-create-definer my-comma-leader-def
-  :prefix ","
+  :prefix "SPC"
   :states '(normal visual))
 
 (defun my-rename-thing-at-point (&optional n)
@@ -707,7 +707,7 @@ If N > 0, only occurrences in current N lines are renamed."
 ;; {{ Use `SPC` as leader key
 ;; all keywords arguments are still supported
 (general-create-definer my-space-leader-def
-  :prefix "SPC"
+  :prefix ","
   :states '(normal visual))
 
 ;; Please check "init-ediff.el" which contains `my-space-leader-def' code too
@@ -749,7 +749,7 @@ If N > 0, only occurrences in current N lines are renamed."
 ;; per-major-mode setup
 
 (general-create-definer my-javascript-leader-def
-  :prefix "SPC"
+  :prefix ","
   :non-normal-prefix "M-SPC"
   :states '(normal motion insert emacs)
   :keymaps 'js2-mode-map)
