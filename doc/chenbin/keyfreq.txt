@@ -1,0 +1,538 @@
+For all major modes:
+
+   6008   13.33%  evilmi-jump-items                                                       %, <visual-state> %, <normal-state> %
+   4292    9.53%  winum-select-window-2                                                   , 2, M-2
+   3806    8.45%  winum-select-window-1                                                   , 1, M-1
+   2522    5.60%  switch-to-shell-or-ansi-term                                            , x z, C-x C-z
+   2280    5.06%  my-counsel-recentf                                                      , r r
+   1910    4.24%  my-multi-purpose-grep                                                   , q q
+   1791    3.98%  back-to-previous-buffer                                                 , b b
+   1561    3.46%  winum-select-window-3                                                   , 3, M-3
+   1379    3.06%  counsel-etags-find-tag-at-point                                         C-]
+   1222    2.71%  eval-expression                                                         , e e, M-:, M-ESC :
+   1153    2.56%  evil-visualstar/begin-search-forward                                    <visual-state> *
+    971    2.16%  my-evil-goto-definition                                                 g t
+    793    1.76%  copy-to-x-clipboard                                                     , a a
+    654    1.45%  pop-tag-mark                                                            C-t
+    633    1.40%  counsel-imenu                                                           , i i
+    616    1.37%  paste-from-x-clipboard                                                  , z z
+    539    1.20%  winum-select-window-4                                                   , 4, M-4
+    522    1.16%  toggle-full-window                                                      , f f
+    420    0.93%  evil-toggle-input-method                                                C-\
+    371    0.82%  git-add-current-file                                                    , v a
+    322    0.71%  evilnc-comment-or-uncomment-lines                                       , c i, M-;
+    302    0.67%  backward-delete-char-untabify                                           
+    295    0.65%  my-split-window-vertically                                              , x 2, C-x 2
+    285    0.63%  find-file-in-project-by-selected                                        , k k
+    279    0.62%  delete-other-windows                                                    , x 1, , s 1, C-w C-o, C-w o, C-x 1, <menu-bar> <file> <one-window>
+    278    0.62%  langtool-goto-next-error                                                , l l
+    273    0.61%  find-function                                                           , h f, C-h C-f, <f1> C-f, <help> C-f
+    270    0.60%  kill-buffer                                                             , x k, C-x k
+    261    0.58%  my-split-window-horizontally                                            , x 3, C-x 3
+    251    0.56%  narrow-or-widen-dwim                                                    , w w
+    235    0.52%  counsel-find-file                                                       , x f
+    224    0.50%  winner-undo                                                             , u u, C-c <left>, C-x 4 u
+    203    0.45%  beginning-of-defun                                                      , b f, <C-M-home>, C-M-a, ESC <C-home>
+    202    0.45%  c-electric-backspace                                                    
+    201    0.45%  evil-a-paren                                                            
+    190    0.42%  counsel-describe-variable                                               C-h v, <f1> v, <help> v
+    187    0.42%  org-shifttab                                                            
+    187    0.42%  wg-create-workgroup                                                     SPC s s
+    186    0.41%  evil-surround-region                                                    <visual-state> S
+    155    0.34%  ffip-diff-find-file                                                     
+    154    0.34%  flyspell-goto-next-error                                                , f e
+    153    0.34%  counsel-etags-find-tag                                                  , f t
+    152    0.34%  ivy-switch-buffer-by-pinyin                                             , x b
+    148    0.33%  my-wg-switch-workgroup                                                  SPC l l
+    143    0.32%  evil-search-word-backward                                               #
+    129    0.29%  langtool-check-buffer                                                   , l b
+    121    0.27%  find-file-in-project-at-point                                           , j j
+    121    0.27%  counsel-describe-function                                               C-h f, <f1> f, <help> f
+    118    0.26%  vc-msg-show                                                             , v v
+    116    0.26%  random-color-theme                                                      SPC r t
+    110    0.24%  goto-char                                                               g o, M-g c, <menu-bar> <edit> <goto> <go-to-pos>
+    100    0.22%  ffip-ivy-resume                                                         , f r
+    100    0.22%  counsel-grep-or-swiper                                                  C-s
+     98    0.22%  hydra-launcher/body                                                     SPC y y, C-c C-y
+     95    0.21%  flyspell-buffer                                                         , f b
+     94    0.21%  wucuo-current-font-face                                                 
+     93    0.21%  evil-forward-WORD-end                                                   E
+     93    0.21%  counsel-browse-kill-ring                                                , y y
+     87    0.19%  evilmr-replace-in-buffer                                                , r b
+     87    0.19%  ivy-partial-or-done                                                     
+     87    0.19%  counsel-etags-recent-tag                                                , r t
+     82    0.18%  er/expand-region                                                        , x x
+     77    0.17%  right-word                                                              <C-right>, <M-right>
+     75    0.17%  top-level                                                               
+     73    0.16%  my-goto-git-gutter                                                      , i h
+     70    0.16%  forward-button                                                          
+     70    0.16%  evil-paste-pop                                                          C-p, M-y
+     69    0.15%  evilmi-select-items                                                     , s i
+     68    0.15%  eacl-complete-line                                                      C-x C-l
+     68    0.15%  describe-key                                                            , h k, C-h k, <f1> k, <help> k, <menu-bar> <help-menu> <describe> <describe-key-1>
+     67    0.15%  paredit-backslash                                                       
+     67    0.15%  toggle-debug-on-error                                                   <menu-bar> <options> <debug-on-error>
+     64    0.14%  dumb-jump-go                                                            , t g, C-M-g
+     63    0.14%  rjsx-mode                                                               
+     61    0.14%  eval-last-sexp                                                          , x e, C-x C-e
+     60    0.13%  left-word                                                               <C-left>, <M-left>
+     52    0.12%  evil-ex-search-next                                                     
+     48    0.11%  evil-visualstar/begin-search-backward                                   <visual-state> #
+     47    0.10%  winum-select-window-5                                                   , 5, M-5
+     47    0.10%  ivy-previous-history-element                                            
+     42    0.09%  isearch-xterm-paste                                                     
+     42    0.09%  term-send-raw-meta                                                      
+     42    0.09%  evilnc-comment-operator                                                 , ,
+     41    0.09%  paredit-open-square                                                     
+     41    0.09%  flymake-mode                                                            
+     40    0.09%  xref-pop-marker-stack                                                   M-,, <menu-bar> <edit> <goto> <xref-pop>
+     37    0.08%  cp-fullpath-of-current-buffer                                           , f p
+     37    0.08%  company-select-next                                                     
+     34    0.08%  byte-compile-file                                                       
+     34    0.08%  my-print-json-path                                                      , j p
+     33    0.07%  js-beautify                                                             , j b
+     33    0.07%  counsel-git-grep-by-selected                                            , g g
+     33    0.07%  evil-find-char-pinyin                                                   f
+     32    0.07%  emacs-lisp-byte-compile                                                 
+     32    0.07%  font-lock-mode                                                          
+     31    0.07%  calendar-forward-day                                                    
+     31    0.07%  sdcv-prev-line                                                          
+     31    0.07%  cliphist-paste-item                                                     , h h
+     30    0.07%  paredit-close-square                                                    
+     30    0.07%  hydra-message/body                                                      
+     30    0.07%  what-cursor-position                                                    g a, g 8, C-x =
+     29    0.06%  langtool-show-message-at-point                                          
+     29    0.06%  backward-up-list                                                        , b u, <C-M-up>, C-M-u, ESC <C-up>
+     29    0.06%  gnus-article-read-summary-keys                                          
+     29    0.06%  evil-open-above                                                         O
+     28    0.06%  evilnc-copy-and-comment-lines                                           , c c, C-c c
+     28    0.06%  evil-find-char-pinyin-to                                                t
+     28    0.06%  counsel-etags-update-tags-force                                         
+     27    0.06%  dired-next-line                                                         
+     27    0.06%  package-install-file                                                    
+     25    0.06%  gnus-summary-insert-new-articles                                        
+     25    0.06%  hydra-launcher/pomodoro-start-and-exit                                  
+     25    0.06%  kill-line                                                               C-k, <deleteline>
+     25    0.06%  endless/downcase                                                        M-l
+     24    0.05%  evil-paste-pop-next                                                     C-n
+     23    0.05%  list-packages                                                           
+     23    0.05%  cp-filename-of-current-buffer                                           , f n
+     23    0.05%  ffip-show-diff-by-description                                           , g d
+     23    0.05%  evilmi-inner-text-object                                                
+     22    0.05%  swiper                                                                  
+     22    0.05%  dired-previous-line                                                     
+     22    0.05%  compile                                                                 <menu-bar> <tools> <compile>
+     22    0.05%  evil-backward-sentence-begin                                            (
+     21    0.05%  run-js                                                                  , r j s
+     21    0.05%  hydra-gnus-summary/body                                                 
+     21    0.05%  evilmi-delete-items                                                     , d i
+     21    0.05%  compile-goto-error                                                      
+     21    0.05%  ivy-switch-buffer                                                       C-x b, <menu-bar> <buffer> <select-named-buffer>
+     21    0.05%  diff-region-tag-selected-as-a                                           , d a
+     20    0.04%  eacl-complete-statement                                                 C-c ;
+     20    0.04%  end-of-defun                                                            , e f, <C-M-end>, C-M-e, ESC <C-end>
+     20    0.04%  langtool-check-done                                                     
+     20    0.04%  endless/upcase                                                          M-u
+     20    0.04%  my-evilnc-comment-or-uncomment-paragraphs                               , c p
+     19    0.04%  previous-complete-history-element                                       
+     18    0.04%  hydra-toggle/body                                                       C-c C-h
+     18    0.04%  compose-mail                                                            C-x m, <menu-bar> <tools> <compose-mail>
+     17    0.04%  hydra-message/dianyou-insert-email-address-from-received-mails-and-exit 
+     17    0.04%  hydra-search/body                                                       C-c C-s
+     17    0.04%  evil-inner-paren                                                        
+     17    0.04%  diff-region-compare-with-b                                              , d b
+     16    0.04%  debugger-eval-expression                                                
+     16    0.04%  evil-jump-item                                                          
+     16    0.04%  hydra-gnus-article/body                                                 
+     16    0.04%  message-send-and-exit                                                   
+     16    0.04%  sdcv-next-line                                                          
+     15    0.03%  Info-follow-nearest-node                                                
+     15    0.03%  evil-shift-right-line                                                   
+     14    0.03%  zhfreq-lookup-word-freq                                                 
+     14    0.03%  checkdoc                                                                
+     14    0.03%  info-apropos                                                            <menu-bar> <help-menu> <more-manuals> <lookup-subject-in-all-manuals>
+     13    0.03%  electric-newline-and-maybe-indent                                       
+     13    0.03%  hydra-launcher/backward-sentence-and-exit                               
+     13    0.03%  js2-next-error                                                          SPC n n, <emacs-state> M-SPC n n, <insert-state> M-SPC n n, <motion-state> SPC n n, <normal-state> SPC n n
+     13    0.03%  hydra-ffip-diff-group/body                                              
+     13    0.03%  js2-jsx-mode                                                            
+     13    0.03%  js2-indent-bounce                                                       
+     12    0.03%  evil-previous-line-first-non-blank                                      -
+     12    0.03%  elint-current-buffer                                                    
+     12    0.03%  gnus-group-prev-unread-group                                            
+     12    0.03%  forward-sentence                                                        M-e
+     12    0.03%  js2-mode                                                                
+     12    0.03%  isearch-with-input-method                                               
+     12    0.03%  mark-whole-buffer                                                       , x h, C-x h, <menu-bar> <edit> <mark-whole-buffer>
+     12    0.03%  ffip-diff-apply-hunk                                                    
+     12    0.03%  recenter-top-bottom                                                     C-l
+     11    0.02%  Info-history-back                                                       
+     11    0.02%  goto-edge-by-comparing-font-face                                        , e s
+     11    0.02%  winum-select-window-6                                                   , 6, M-6
+     11    0.02%  load-theme                                                              
+     11    0.02%  swiper-the-thing                                                        
+     11    0.02%  evil-goto-mark                                                          `
+     11    0.02%  backward-paragraph                                                      <C-up>, M-{
+     11    0.02%  octave-lookfor                                                          
+     11    0.02%  indent-for-tab-command                                                  
+     10    0.02%  hydra-toggle/toggle-company-ispell                                      
+     10    0.02%  zhfreq-initialize-char-word-freq-lookup                                 
+     10    0.02%  js2-jump-to-definition                                                  
+     10    0.02%  evil-invert-char                                                        ~
+     10    0.02%  mml-attach-file                                                         
+     10    0.02%  pyim-export                                                             
+     10    0.02%  counsel-load-theme                                                      
+     10    0.02%  delete-char                                                             
+      9    0.02%  iedit-mode                                                              
+      9    0.02%  dianyou-switch-gnus-buffer                                              
+      9    0.02%  hydra-gnus-summary/dianyou-group-make-nnir-group-and-exit               
+      9    0.02%  popup-which-function                                                    , w f
+      9    0.02%  set-mark-command                                                        C-@, C-SPC
+      9    0.02%  wgrep-exit                                                              
+      9    0.02%  package-menu-mark-upgrades                                              
+      9    0.02%  git-gutter-reset-to-head-parent                                         SPC g h
+      9    0.02%  Info-exit                                                               
+      9    0.02%  evil-avy-goto-word-or-subword-1                                         ; w
+      9    0.02%  find-file-in-current-directory                                          , t t
+      9    0.02%  counsel-gtags-dwim                                                      , g t
+      8    0.02%  wucuo-start                                                             
+      8    0.02%  js2-mode-show-element                                                   
+      8    0.02%  backward-sentence                                                       M-a
+      8    0.02%  hydra-launcher/my-switch-gnus-buffer-and-exit                           
+      8    0.02%  evil-search-previous                                                    N
+      8    0.02%  ace-link                                                                M-o
+      8    0.02%  instant-rename-tag                                                      
+      8    0.02%  exchange-point-and-mark                                                 C-x C-x
+      8    0.02%  hydra-message/dianyou-paste-image-from-clipboard-and-exit               
+      8    0.02%  w3m-safe-view-this-url                                                  
+      8    0.02%  winum-select-window-0-or-10                                             , 0, M-0
+      8    0.02%  octave-kill-process                                                     
+      7    0.02%  counsel-etags-grep-current-directory                                    , d d
+      7    0.02%  balance-windows                                                         C-w =, C-x +
+      7    0.02%  ivy-magic-read-file-env                                                 
+      7    0.02%  elpamr-create-mirror-for-installed                                      
+      7    0.02%  git-link-commit                                                         
+      7    0.02%  org-toggle-link-display                                                 , o t l
+      7    0.02%  gnus-article-reply-with-original                                        
+      7    0.02%  ace-pinyin-jump-char-2                                                  ; ;
+      7    0.02%  diff-hunk-next                                                          
+      7    0.02%  sdcv-search-input+                                                      ; d t
+      7    0.02%  gnus-group-get-new-news                                                 
+      7    0.02%  mark-paragraph                                                          M-h
+      6    0.01%  hydra-gnus-summary/dianyou-switch-gnus-buffer-and-exit                  
+      6    0.01%  ivy-next-history-element                                                
+      6    0.01%  hydra-toggle/nil                                                        
+      6    0.01%  evil-search-backward                                                    ?
+      6    0.01%  evil-append-line                                                        A
+      6    0.01%  counsel-evil-goto-global-marker                                         SPC m m
+      6    0.01%  evil-inner-back-quote                                                   
+      6    0.01%  backward-sexp                                                           <C-M-left>, C-M-b, ESC <C-left>
+      6    0.01%  search-forward                                                          <find>
+      6    0.01%  sdcv-search-pointer                                                     
+      6    0.01%  c-electric-paren                                                        
+      6    0.01%  debugger-list-functions                                                 
+      6    0.01%  ivy-next-line-or-history                                                
+      6    0.01%  ivy-delete-char                                                         
+      6    0.01%  Info-next-reference                                                     
+      5    0.01%  js2-mode-hide-element                                                   
+      5    0.01%  next-complete-history-element                                           
+      5    0.01%  pomidor-stop                                                            
+      5    0.01%  git-link                                                                
+      5    0.01%  evilnc-comment-or-uncomment-to-the-line                                 
+      5    0.01%  evilnc-comment-or-uncomment-html-tag                                    , c t
+      5    0.01%  hydra-gnus-group/body                                                   
+      5    0.01%  cleanup-buffer-safe                                                     
+      5    0.01%  gnus-summary-prev-unread-article                                        
+      5    0.01%  ivy-forward-char                                                        
+      5    0.01%  aya-open-line                                                           C-q
+      5    0.01%  hydra-launcher/forward-sentence-and-exit                                
+      5    0.01%  hydra-ivy/ivy-toggle-case-fold                                          
+      5    0.01%  evil-outer-arg                                                          
+      5    0.01%  evil-replace-state                                                      R
+      5    0.01%  ivy-kill-line                                                           
+      5    0.01%  debug-help-follow                                                       
+      5    0.01%  text-mode                                                               
+      5    0.01%  diff-hunk-prev                                                          
+      5    0.01%  hydra-ffip-diff-group/lambda-n-and-exit                                 
+      5    0.01%  forward-paragraph                                                       <C-down>, M-}
+      5    0.01%  dired-do-flagged-delete                                                 
+      4    0.01%  org-mime-org-subtree-htmlize                                            
+      4    0.01%  transpose-chars                                                         
+      4    0.01%  emacs-lisp-mode                                                         
+      4    0.01%  ivy-yank-word                                                           
+      4    0.01%  paredit-comment-dwim                                                    
+      4    0.01%  evil-a-back-quote                                                       
+      4    0.01%  evil-backward-paragraph                                                 {
+      4    0.01%  orgtbl-hijacker-command-101                                             
+      4    0.01%  hydra-ivy/body                                                          
+      4    0.01%  neotree-next-line                                                       
+      4    0.01%  semantic-ia-fast-jump                                                   
+      4    0.01%  magit-commit-extend                                                     SPC g j a
+      4    0.01%  gnus-mime-save-part                                                     
+      4    0.01%  dianyou-paste-image-from-clipboard                                      
+      4    0.01%  hydra-gnus-article/lambda-o-and-exit                                    
+      4    0.01%  hydra-gnus-group/dianyou-switch-gnus-buffer-and-exit                    
+      4    0.01%  mark-defun                                                              SPC m f, C-M-h
+      4    0.01%  read-only-mode                                                          C-x C-q
+      4    0.01%  conf-mode                                                               
+      4    0.01%  sgml-skip-tag-forward                                                   
+      4    0.01%  sort-lines                                                              
+      4    0.01%  hydra-ffip-diff-group/lambda-j-and-exit                                 
+      4    0.01%  vc-rename-file-and-buffer                                               , v m
+      4    0.01%  evil-jump-out-args                                                      K
+      4    0.01%  debugger-jump                                                           
+      4    0.01%  dired-flag-file-deletion                                                
+      4    0.01%  Info-search                                                             
+      3    0.01%  org-mime-htmlize                                                        
+      3    0.01%  evil-forward-WORD-begin                                                 W
+      3    0.01%  completion-at-point                                                     
+      3    0.01%  package-menu-mark-install                                               
+      3    0.01%  add-pwd-into-load-path                                                  
+      3    0.01%  hydra-search/w3m-stackoverflow-search                                   
+      3    0.01%  hydra-search/nil                                                        
+      3    0.01%  my-clean-aspell-dict                                                    
+      3    0.01%  counsel-etags-list-tag                                                  
+      3    0.01%  hydra-ivy/keyboard-escape-quit-and-exit                                 
+      3    0.01%  hydra-message/counsel-bbdb-complete-mail-and-exit                       
+      3    0.01%  evil-avy-goto-char-timer                                                ; a
+      3    0.01%  counsel-locate                                                          
+      3    0.01%  evil-inner-bracket                                                      
+      3    0.01%  kill-ring-to-clipboard                                                  , k c
+      3    0.01%  iedit-next-occurrence                                                   
+      3    0.01%  evil-lion-left                                                          g l
+      3    0.01%  git-gutter-reset-to-default                                             SPC g r
+      3    0.01%  forward-sexp                                                            <C-M-right>, C-M-f, ESC <C-right>
+      3    0.01%  which-key-C-h-dispatch                                                  
+      3    0.01%  ivy-scroll-up-command                                                   
+      3    0.01%  git-gutter:toggle                                                       C-x C-g
+      3    0.01%  gnus-summary-next-unread-article                                        
+      3    0.01%  flyspell-mode                                                           <menu-bar> <tools> <spell> <flyspell-mode>
+      3    0.01%  pomidor                                                                 
+      3    0.01%  tab-to-tab-stop                                                         M-i
+      3    0.01%  package-lint-current-buffer                                             
+      3    0.01%  counsel-gtags-find-symbol                                               , g r
+      3    0.01%  evil-backward-WORD-begin                                                B
+      3    0.01%  backward-list                                                           
+      3    0.01%  yank-pop                                                                C-p, M-y
+      3    0.01%  rjsx-delete-creates-full-tag                                            
+      3    0.01%  next-error-no-select                                                    
+      3    0.01%  evil-scroll-line-to-center                                              z z
+      3    0.01%  evil-jump-to-tag                                                        g C-]
+      3    0.01%  evil-search-unbounded-word-forward                                      g *
+      3    0.01%  isearch-forward                                                         <menu-bar> <edit> <search> <i-search> <isearch-forward>
+      3    0.01%  isearch-toggle-input-method                                             
+      3    0.01%  uniq-lines                                                              
+      3    0.01%  my-format-dictionary                                                    
+      3    0.01%  evil-change-whole-line                                                  S
+      3    0.01%  find-alternate-file                                                     C-x C-v
+      3    0.01%  hydra-ffip-diff-group/diff-hunk-next-and-exit                           
+      3    0.01%  python-indent-dedent-line-backspace                                     
+      3    0.01%  package-menu-describe-package                                           
+      3    0.01%  rjsx-rename-tag-at-point                                                C-c C-r
+      3    0.01%  hydra-dired/body                                                        
+      3    0.01%  octave-send-buffer                                                      
+      3    0.01%  info                                                                    C-h i, <f1> i, <help> i
+      3    0.01%  delete-window                                                           , x 0, C-x 0
+      3    0.01%  help-for-help                                                           C-h ?, C-h <f1>, C-h <help>, C-h C-h, <f1> ?, <f1> <f1>, <f1> <help>, <f1> C-h, <help> ?, <help> <f1>, <help> <help>, <help> C-h
+      2    0.00%  apropos-command                                                         C-h a, <f1> a, <help> a, <menu-bar> <help-menu> <search-documentation> <find-commands-by-name>
+      2    0.00%  fill-paragraph                                                          M-q
+      2    0.00%  evil-forward-paragraph                                                  }
+      2    0.00%  js-send-region                                                          , j s r
+      2    0.00%  ansi-term                                                               
+      2    0.00%  octave-update-function-file-comment                                     
+      2    0.00%  dumb-jump-back                                                          , t b, C-M-p
+      2    0.00%  hydra-dired/dired-create-directory-and-exit                             
+      2    0.00%  evil-shell-command                                                      !
+      2    0.00%  find-file                                                               <open>, C-x C-f, <menu-bar> <file> <new-file>
+      2    0.00%  count-lines-page                                                        C-x l
+      2    0.00%  hydra-search/lookup-doc-in-man                                          
+      2    0.00%  hydra-launcher/counsel-bookmark-goto-and-exit                           
+      2    0.00%  w3m-close-window                                                        
+      2    0.00%  hydra-search/sdcv-search-input                                          
+      2    0.00%  sdcv-quit                                                               
+      2    0.00%  lookup-doc-in-man                                                       ; m m
+      2    0.00%  my-lookup-dict-org                                                      ; d d
+      2    0.00%  help-go-forward                                                         
+      2    0.00%  count-words                                                             
+      2    0.00%  sh-mode                                                                 
+      2    0.00%  pyim-export-personal-words                                              
+      2    0.00%  evil-forward-sentence-begin                                             )
+      2    0.00%  typescript-mode                                                         
+      2    0.00%  evil-next-line-1-first-non-blank                                        _
+      2    0.00%  count-words-region                                                      M-=
+      2    0.00%  ivy-toggle-case-fold                                                    
+      2    0.00%  toggle-two-split-window                                                 , x t
+      2    0.00%  my-imenu-comments                                                       , i c
+      2    0.00%  menu-bar-mode                                                           
+      2    0.00%  neotree-previous-line                                                   
+      2    0.00%  pomodoro-stop                                                           
+      2    0.00%  evil-insert-resume                                                      g i
+      2    0.00%  kill-word                                                               <C-delete>, M-d
+      2    0.00%  buf-move-down                                                           , b j
+      2    0.00%  js-comint-quit-or-cancel                                                
+      2    0.00%  comint-get-next-from-history                                            
+      2    0.00%  evil-insert-line                                                        I
+      2    0.00%  hydra-message/my-switch-gnus-buffer-and-exit                            
+      2    0.00%  my-switch-gnus-buffer                                                   
+      2    0.00%  hydra-gnus-summary/my-switch-gnus-buffer-and-exit                       
+      2    0.00%  langtool-server-stop                                                    
+      2    0.00%  langtool-check                                                          
+      2    0.00%  js2-mode-forward-sexp                                                   
+      2    0.00%  current-thing-at-point                                                  
+      2    0.00%  message-delete-not-region                                               
+      2    0.00%  hydra-gnus-article/gnus-article-wide-reply-and-exit                     
+      2    0.00%  evil-a-double-quote                                                     
+      2    0.00%  gnus-summary-reply-with-original                                        
+      2    0.00%  hydra-gnus-article/w3mext-download-rss-stream-and-exit                  
+      2    0.00%  ispell-word                                                             z =, M-$, <menu-bar> <tools> <spell> <ispell-word>
+      2    0.00%  elpl-return                                                             
+      2    0.00%  gnus-article-press-button                                               
+      2    0.00%  hydra-gnus-article/dianyou-switch-gnus-buffer-and-exit                  
+      2    0.00%  evil-shift-left                                                         <
+      2    0.00%  pomodoro-start                                                          
+      2    0.00%  evilnc-outer-commenter                                                  
+      2    0.00%  evil-backward-word-end                                                  g e
+      2    0.00%  hydra-ivy/ivy-rotate-preferred-builders                                 
+      2    0.00%  paredit-forward-kill-word                                               
+      2    0.00%  counsel-git                                                             , g f
+      2    0.00%  evil-window-middle                                                      M
+      2    0.00%  evil-copy-from-above                                                    
+      2    0.00%  goto-last-change-reverse                                                g ,
+      2    0.00%  hydra-gnus-summary/gnus-summary-wide-reply-with-original-and-exit       
+      2    0.00%  evil-fill                                                               g w
+      2    0.00%  hydra-toggle/toggle-truncate-lines                                      
+      2    0.00%  evil-scroll-line-down                                                   C-e
+      2    0.00%  vc-next-action                                                          , x v v, C-x v v, <menu-bar> <tools> <vc> <vc-next-action>
+      2    0.00%  js2-mode-show-all                                                       C-c C-a
+      2    0.00%  evil-delete-backward-char                                               X
+      2    0.00%  hydra-git-gutter/body                                                   C-c C-g
+      2    0.00%  hydra-window/hydra-move-splitter-left                                   
+      2    0.00%  calendar-backward-week                                                  
+      2    0.00%  chinese-calender                                                        
+      2    0.00%  sdcv-search-input                                                       ; d b
+      2    0.00%  evil-downcase                                                           g u
+      2    0.00%  gnus-agent-expire                                                       
+      2    0.00%  gnus-group-expire-articles                                              
+      2    0.00%  company-template-forward-field                                          
+      2    0.00%  c-electric-semi&comma                                                   
+      2    0.00%  c-electric-brace                                                        
+      2    0.00%  elpy-disable                                                            
+      2    0.00%  evil-a-curly                                                            
+      2    0.00%  wdired-finish-edit                                                      
+      2    0.00%  hydra-dired/dired-toggle-read-only-and-exit                             
+      2    0.00%  term--xterm-paste                                                       
+      2    0.00%  hydra-launcher/my-dired-redo-from-commands-history-and-exit             
+      2    0.00%  company-abort                                                           
+      1    0.00%  evil-next-match                                                         g n
+      1    0.00%  comment-dwim                                                            
+      1    0.00%  dired-do-kill-lines                                                     
+      1    0.00%  package-autoremove                                                      
+      1    0.00%  package-menu-mark-delete                                                
+      1    0.00%  package-menu-mark-unmark                                                
+      1    0.00%  gnus-summary-edit-article                                               
+      1    0.00%  gnus-summary-mark-as-expirable                                          
+      1    0.00%  git-gutter-mode                                                         
+      1    0.00%  hydra-search/sdcv-search-input+                                         
+      1    0.00%  hydra-search/w3mext-hacker-search                                       
+      1    0.00%  hydra-launcher/toggle-typewriter-and-exit                               
+      1    0.00%  calendar-forward-week                                                   
+      1    0.00%  calendar-exit                                                           
+      1    0.00%  js2-mode-toggle-element                                                 SPC t e, <menu-bar> <javascript> <js2-toggle-function>, <emacs-state> M-SPC t e, <insert-state> M-SPC t e, <motion-state> SPC t e, <normal-state> SPC t e
+      1    0.00%  evil-open-fold                                                          z o
+      1    0.00%  hydra-toggle/whitespace-mode                                            
+      1    0.00%  hydra-toggle/lambda-i                                                   
+      1    0.00%  evil-a-sentence                                                         
+      1    0.00%  evil-execute-in-emacs-state                                             \
+      1    0.00%  indent-region                                                           C-M-\
+      1    0.00%  counsel-etags-scan-code                                                 
+      1    0.00%  describe-mode                                                           C-h m, <f1> m, <help> m, <menu-bar> <help-menu> <describe> <describe-mode>
+      1    0.00%  evil-find-char-pinyin-to-backward                                       T
+      1    0.00%  debugger-frame                                                          
+      1    0.00%  kill-ring-save                                                          <C-insertchar>, <C-insert>, M-w, <menu-bar> <edit> <copy>
+      1    0.00%  hydra-gnus-article/w3mext-open-with-mplayer-and-exit                    
+      1    0.00%  tmm-menubar                                                             M-`
+      1    0.00%  menu-bar-open                                                           <f10>
+      1    0.00%  menu-bar-read-mail                                                      <menu-bar> <tools> <rmail>
+      1    0.00%  neotree                                                                 
+      1    0.00%  neotree-hide                                                            , n t h
+      1    0.00%  winum-select-window-8                                                   , 8, M-8
+      1    0.00%  my-git-timemachine                                                      , t m
+      1    0.00%  evil-window-down                                                        C-w j
+      1    0.00%  evil-use-register                                                       "
+      1    0.00%  help-go-back                                                            
+      1    0.00%  scratch                                                                 , s c
+      1    0.00%  evilnc-copy-and-comment-operator                                        , .
+      1    0.00%  evilnc-quick-comment-or-uncomment-to-the-line                           , c l, C-c l
+      1    0.00%  timeclock-in                                                            
+      1    0.00%  ivy-call                                                                
+      1    0.00%  gnus-topic-catchup-articles                                             
+      1    0.00%  ibuffer                                                                 C-x C-b
+      1    0.00%  ibuffer-mark-for-delete                                                 
+      1    0.00%  ibuffer-do-kill-on-deletion-marks                                       
+      1    0.00%  ibuffer-visit-buffer                                                    
+      1    0.00%  describe-copying                                                        C-h C-c, <f1> C-c, <help> C-c, <menu-bar> <help-menu> <describe-copying>
+      1    0.00%  keyfreq-reset                                                           
+      1    0.00%  markdown-mode                                                           
+      1    0.00%  org-insert-link                                                         
+      1    0.00%  gnus-summary-show-article                                               
+      1    0.00%  gnus-article-read-summary-send-keys                                     
+      1    0.00%  gnus-summary-reply                                                      
+      1    0.00%  gnus-summary-best-unread-article                                        
+      1    0.00%  evil-visual-restore                                                     g v
+      1    0.00%  gnus-group-next-unread-group                                            
+      1    0.00%  buf-move-right                                                          , b l
+      1    0.00%  rotate-windows                                                          , r w
+      1    0.00%  hydra-launcher/pomodoro-resume-and-exit                                 
+      1    0.00%  counsel-bookmark-goto                                                   
+      1    0.00%  elpl                                                                    
+      1    0.00%  back-to-indentation                                                     M-m
+      1    0.00%  evil-forward-arg                                                        L
+      1    0.00%  evil-replace-backspace                                                  
+      1    0.00%  evil-inner-curly                                                        
+      1    0.00%  evil-paste-from-register                                                
+      1    0.00%  eval-region                                                             
+      1    0.00%  hydra-launcher/nil                                                      
+      1    0.00%  aya-expand                                                              
+      1    0.00%  aya-create                                                              , a c
+      1    0.00%  evil-goto-column                                                        |
+      1    0.00%  help-follow                                                             
+      1    0.00%  View-scroll-line-forward                                                
+      1    0.00%  gnus-summary-pop-limit                                                  
+      1    0.00%  gnus-summary-limit-to-articles                                          
+      1    0.00%  hydra-ivy/ivy-done-and-exit                                             
+      1    0.00%  hydra-gnus-article/gnus-article-wide-reply-with-original-and-exit       
+      1    0.00%  hydra-launcher/dianyou-switch-gnus-buffer-and-exit                      
+      1    0.00%  hydra-launcher/my-wg-switch-workgroup-and-exit                          
+      1    0.00%  hydra-launcher/emms-previous-and-exit                                   
+      1    0.00%  hydra-describe/nil                                                      
+      1    0.00%  hydra-describe/body                                                     C-c C-q
+      1    0.00%  js2-mode-toggle-hide-comments                                           <menu-bar> <javascript> <hide-comments>, <menu-bar> <javascript> <show-comments>
+      1    0.00%  evil-inner-arg                                                          
+      1    0.00%  vc-annotate                                                             , v g, C-x v g, <menu-bar> <tools> <vc> <vc-annotate>
+      1    0.00%  endless/capitalize                                                      M-c
+      1    0.00%  counsel-etags-virtual-update-tags                                       
+      1    0.00%  ivy-call-and-recenter                                                   
+      1    0.00%  evil-execute-macro                                                      @
+      1    0.00%  evil-backward-arg                                                       H
+      1    0.00%  evil-shift-right                                                        >
+      1    0.00%  evil-backward-section-begin                                             [ [
+      1    0.00%  revert-buffer                                                           <menu-bar> <file> <revert-buffer>
+      1    0.00%  hydra-window/ace-delete-other-windows                                   
+      1    0.00%  hydra-window/body                                                       C-c C-w
+      1    0.00%  hydra-ffip-diff-group/lambda-k-and-exit                                 
+      1    0.00%  org-transpose-words                                                     
+      1    0.00%  save-some-buffers                                                       C-x s
+      1    0.00%  hydra-search/w3m-google-search                                          
+      1    0.00%  evil-inner-symbol                                                       
+      1    0.00%  js-doc-insert-function-doc                                              
+      1    0.00%  evil-ex-repeat-substitute                                               &
+      1    0.00%  gnus-group-exit                                                         
+      1    0.00%  gnus-group-expire-all-groups                                            
+      1    0.00%  evil-scroll-down                                                        C-d
+      1    0.00%  debugger-continue                                                       
+      1    0.00%  sh-case                                                                 
+      1    0.00%  package-install                                                         
+      1    0.00%  describe-key-briefly                                                    C-h c, <f1> c, <help> c
+      1    0.00%  term-send-up                                                            
+      1    0.00%  kill-buffer-and-window                                                  , k b, C-x 4 0
+      1    0.00%  describe-syntax                                                         C-h s, <f1> s, <help> s
