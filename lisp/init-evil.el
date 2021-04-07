@@ -525,7 +525,9 @@ If N > 0, only occurrences in current N lines are renamed."
   "," 'evilnc-comment-operator
   "bf" 'beginning-of-defun
   "bu" 'backward-up-list
-  "bb" (lambda () (interactive) (switch-to-buffer nil)) ; to previous buffer
+  "TAB" (lambda () (interactive) (switch-to-buffer nil)) ; to previous buffer
+  "bb" 'ivy-switch-buffer
+  "xb" 'ivy-switch-buffer
   "ef" 'end-of-defun
   "m" 'evil-set-marker
   "em" 'shellcop-erase-buffer
