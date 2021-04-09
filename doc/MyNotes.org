@@ -5,3 +5,18 @@ https://github.com/redguardtoo/emacs.d/issues/827
 
 ** UniversalCtags/ExuberantCtags/Etags
 https://www.emacswiki.org/emacs/BuildTags
+
+** 快捷键
+
+,tt find-file-in-current-directory
+,kk find-file-in-project-by-selected
+,dd counsel-etags-grep-current-directory (counsel-etags-grep nil nil root)
+,qq my-multi-purpose-grep "Run different grep from N." (counsel-etags-grep)
+,gg my-counsel-git-grep "Git grep in project.  If LEVEL is not nil, grep files in parent commit."
+
+** Can I avoid outdated byte-compiled elisp files?
+
+M-x byte-recompile-directory
+https://emacs.stackexchange.com/questions/185/can-i-avoid-outdated-byte-compiled-elisp-files/186
+
+** 
