@@ -547,11 +547,11 @@ If N > 0, only occurrences in current N lines are renamed."
   "fp" 'cp-fullpath-of-current-buffer
   "dj" 'dired-jump ;; open the dired from current file
   "xo" 'ace-window
-  "ff" 'my-toggle-full-window ;; I use WIN+F in i3
+  "oo" 'my-toggle-full-window ;; I use WIN+F in i3
   "ip" 'find-file-in-project
   "tt" 'find-file-in-current-directory
   "jj" 'find-file-in-project-at-point
-  "kk" 'find-file-in-project-by-selected
+  "ff" 'find-file-in-project-by-selected
   "kn" 'find-file-with-similar-name ; ffip v5.3.1
   "fd" 'find-directory-in-project-by-selected
   "trm" 'get-term
@@ -606,7 +606,7 @@ If N > 0, only occurrences in current N lines are renamed."
   "cxi" 'org-clock-in ; `C-c C-x C-i'
   "cxo" 'org-clock-out ; `C-c C-x C-o'
   "cxr" 'org-clock-report ; `C-c C-x C-r'
-  "qq" 'my-multi-purpose-grep
+  "kk" 'my-multi-purpose-grep
   "dd" 'counsel-etags-grep-current-directory
   "rr" 'my-counsel-recentf
   "da" 'diff-region-tag-selected-as-a
@@ -637,7 +637,7 @@ If N > 0, only occurrences in current N lines are renamed."
           (interactive)
           (split-window-right)
           (windmove-right))
-  "oo" 'delete-other-windows
+  ;; "oo" 'delete-other-windows
   ;; }}
   "xr" 'my-rotate-windows
   "xt" 'toggle-two-split-window
