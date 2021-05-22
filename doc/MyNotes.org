@@ -1,5 +1,4 @@
 * Org mode
-
 ** 如何能配置出顺手的 Web 开发环境
 https://github.com/redguardtoo/emacs.d/issues/827
 
@@ -14,9 +13,33 @@ https://www.emacswiki.org/emacs/BuildTags
 ,qq my-multi-purpose-grep "Run different grep from N." (counsel-etags-grep)
 ,gg my-counsel-git-grep "Git grep in project.  If LEVEL is not nil, grep files in parent commit."
 
+** C++ IDE
+*** Emacs as C++ IDE, easy way
+http://blog.binchen.org/posts/emacs-as-c-ide-easy-way.html
+
+- company-gtags.el from company for code completion
+- emacs-counsel-gtags for code navigation
+
 ** Can I avoid outdated byte-compiled elisp files?
-
 M-x byte-recompile-directory
-https://emacs.stackexchange.com/questions/185/can-i-avoid-outdated-byte-compiled-elisp-files/186
 
-** 
+** How can I script emacs to install packages from list?
+#+begin_example
+(setq package-selected-packages
+      '(async
+        epl
+        evil
+        goto-chg
+        helm
+        helm-ag
+        helm-core
+        helm-descbinds
+        helm-projectile
+        pkg-info
+        popup
+        projectile
+        undo-tree))
+(package-install-selected-packages)
+#+end_example
+** Find out backend used in company completion
+You can type ==M-x company-diag== now, and see the used backend in the resulting buffer.
