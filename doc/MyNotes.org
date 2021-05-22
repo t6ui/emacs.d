@@ -2,9 +2,6 @@
 ** 如何能配置出顺手的 Web 开发环境
 https://github.com/redguardtoo/emacs.d/issues/827
 
-** UniversalCtags/ExuberantCtags/Etags
-https://www.emacswiki.org/emacs/BuildTags
-
 ** 快捷键
 
 ,tt find-file-in-current-directory
@@ -14,11 +11,55 @@ https://www.emacswiki.org/emacs/BuildTags
 ,gg my-counsel-git-grep "Git grep in project.  If LEVEL is not nil, grep files in parent commit."
 
 ** C++ IDE
+*** UniversalCtags/ExuberantCtags/Etags
+https://www.emacswiki.org/emacs/BuildTags
 *** Emacs as C++ IDE, easy way
 http://blog.binchen.org/posts/emacs-as-c-ide-easy-way.html
-
+**** gtags
 - company-gtags.el from company for code completion
 - emacs-counsel-gtags for code navigation
+
+1. generate gtags data files
+@see generate_global_c_include_gtags.sh
+2. config emacs
+#+begin_example
+;; `file-truename' MUST be used!
+(setenv "GTAGSLIBPATH" (concat "/usr/include"
+                               ":"
+                               "/usr/src/linux/include"
+                               ":"
+                               (file-truename "~/proj2")
+                               ":"
+                               (file-truename "~/proj1")))
+(setenv "MAKEOBJDIRPREFIX" (file-truename "~/obj/"))
+(setq company-backends '((company-dabbrev-code company-gtags)))
+#+end_example
+
+**** ctags
+- company-ctags plus company-mode for auto-completion.
+- counsel-etags for navigation
+
+;; https://github.com/redguardtoo/counsel-etags#specify-multiple-tags-files
+;; Files in extra-tags-files should have symbols with absolute path only.
+;; ctags --options="$HOME/.ctags" -e -R
+;; cd /usr/include && find /usr/include | sudo ctags -e -L - 
+;; cd /usr/local/include && find /usr/local/include | sudo ctags -e -L -
+(setq counsel-etags-extra-tags-files '("/usr/include/TAGS" "/usr/local/include/TAGS"))
+(setq company-ctags-extra-tags-files '("/usr/include/TAGS" "/usr/local/include/TAGS"))
+
+*** ccls
+https://blog.binchen.org/posts/how-to-speed-up-lsp-mode.html
+
+用 LSP 的话，配置.ccls应该能引入其他路径。
+ccls + lsp-mode在linux下是开箱即用的. 
+ccls 将自动搜索/usr/local/include下的头文件,
+对于其他第三方, ccls将读取compile_commands.json（可以从cmake / makefiles生成）
+https://github.com/MaskRay/ccls/wiki/Project-Setup#compile_commandsjson
+
+*** more
+http://tuhdo.github.io/c-ide.html#sec-2
+https://nilsdeppe.com/posts/emacs-c++-ide2
+https://www.zhihu.com/question/313485182/answer/642390000
 
 ** Can I avoid outdated byte-compiled elisp files?
 M-x byte-recompile-directory
